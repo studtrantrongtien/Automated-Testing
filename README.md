@@ -1,5 +1,6 @@
 # Automated-Testing
 
+## Student: Tran Trong Tien 3630201/70101
 ## Requirement: 
 1. Linux base system
 2. Chrome web driver in directory /bin/usr
