@@ -1,4 +1,4 @@
-package googlesearch.test;
+package lab1.googlesearch.test;
 
 import java.util.concurrent.TimeUnit;
 
