@@ -7,8 +7,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-import driverutils.DriverManager;
-import pages.SearchPageAction;
+import lab1.driverutils.DriverManager;
+import lab1.pages.SearchPageAction;
 
 public class TestGoogleSearchPage{
 	
