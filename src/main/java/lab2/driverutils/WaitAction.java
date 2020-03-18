@@ -8,10 +8,9 @@ import java.util.function.Function;
 
 public class WaitAction{
 
-    private WebDriverWait webDriverWait;
-
+    private WebDriverWait 	webDriverWait;
     public WaitAction(WebDriver webDriver) {
-        webDriverWait = new WebDriverWait(webDriver, 10);
+        webDriverWait 	= new WebDriverWait(webDriver, 10);
     }
 
     public Boolean waitUntilCondition(Function<WebDriver, Boolean> p) {
