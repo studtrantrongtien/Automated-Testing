@@ -46,6 +46,8 @@ public class TestLab2 {
 			login.verifyIfLoginSuccess("Trongtien Tran");	
 		}
 		
+		
+		// Test login with wrong password
 		@Category(SmokeTests.class)
 		@Test
 		public void testF_LoginFailed() {
