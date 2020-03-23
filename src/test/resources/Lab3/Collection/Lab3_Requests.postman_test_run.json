@@ -1,0 +1,203 @@
+{
+	"id": "c7ff730e-e4a5-48d9-b21c-6bc78122f265",
+	"name": "Lab3_Requests",
+	"timestamp": "2020-03-23T21:25:48.365Z",
+	"collection_id": "0b822a76-4420-4770-9cfb-79ff1bafd639",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 6,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c596bb0e-b247-4b05-b0e7-8c4cae2f627f",
+			"name": "Get List User",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 1687,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1687
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c21e4092-6a69-463d-96ff-9cd805718745",
+			"name": "Get Single User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 242,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				242
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c0acfbbf-34b7-45a3-a3f0-5ef3de4ac10a",
+			"name": "Get Single User Not Found",
+			"url": "https://reqres.in/api/users/23",
+			"time": 124,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				124
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "8adf02d6-33e6-4182-95ef-3b88243f3f8a",
+			"name": "ReqRegisterSuccess",
+			"url": "https://reqres.in/api/register",
+			"time": 173,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				173
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3cf81671-5dc7-41d8-ada4-b31e31ee6d3f",
+			"name": "ReqRegisterFailed",
+			"url": "https://reqres.in/api/register",
+			"time": 74,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				74
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "6ea4ad6e-7fbb-406f-b747-e5d52af247a7",
+			"name": "ReqLoginSuccess",
+			"url": "https://reqres.in/api/login",
+			"time": 70,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				70
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"collection": {
+		"requests": [
+			{
+				"id": "c596bb0e-b247-4b05-b0e7-8c4cae2f627f",
+				"method": "GET"
+			},
+			{
+				"id": "c21e4092-6a69-463d-96ff-9cd805718745",
+				"method": "GET"
+			},
+			{
+				"id": "c0acfbbf-34b7-45a3-a3f0-5ef3de4ac10a",
+				"method": "GET"
+			},
+			{
+				"id": "8adf02d6-33e6-4182-95ef-3b88243f3f8a",
+				"method": "POST"
+			},
+			{
+				"id": "3cf81671-5dc7-41d8-ada4-b31e31ee6d3f",
+				"method": "POST"
+			},
+			{
+				"id": "6ea4ad6e-7fbb-406f-b747-e5d52af247a7",
+				"method": "POST"
+			}
+		]
+	}
+}
