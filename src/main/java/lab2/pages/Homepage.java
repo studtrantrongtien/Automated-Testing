@@ -8,18 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class Homepage extends PageObject{
-	// //*[@id="js_0"]/div/div/div[1]/div[2]
-	// //*[@id="js_2"]
-	// //*[@id="js_2"]/form
-	// //*[@id="js_2"]/form/button
-	@FindBy(xpath = "//*[@id=\"js_0\"]/div/div/div[1]/div[2]")	// OK
-	private WebElement topBar;
-	
-	// //*[@id="u_a_2"]
 	@FindBy(name = "q")											// OK
 	private WebElement searchBar;
 	
-	@FindBy(linkText =  "Peter the Great St.Petersburg Polytechnic University")
+	@FindBy(linkText =  "FACEBOOK")
 	private WebElement resultSearch;
 	
 	public Homepage(WebDriver driver) {
@@ -27,8 +19,6 @@ public class Homepage extends PageObject{
 	}
 	
 	public void searchText(String text) {
-		topBar.click();
-		waitForElementToAppear(searchBar);
 		searchBar.sendKeys(text);
 		searchBar.submit();
 	}
