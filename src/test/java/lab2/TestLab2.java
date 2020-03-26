@@ -42,8 +42,8 @@ public class TestLab2 {
 		@Test
 		public void testA_Login() {
 			webDriver.get("https://www.facebook.com/login.php");
-			login.login("trongtien.tran.18400", "53230eb89891d8ebe75c0d296841789fae3b7bb8");
-			login.verifyIfLoginSuccess("Trongtien Tran");	
+			login.login("tran.trongtien.54", "53230eb89891d8ebe75c0d296841789fae3b7bb8");
+			login.verifyIfLoginSuccess("Tran Trong Tien");	
 		}
 		
 		
@@ -53,16 +53,15 @@ public class TestLab2 {
 		public void testF_LoginFailed() {
 			login.logout();
 			webDriver.navigate().to("https://www.facebook.com/login.php");
-			login.login("trongtien.tran.18400", "d296841789fae3b7bb8");
-			login.verifyIfLoginFailed("Log in as Trongtien Tran");
+			login.login("tran.trongtien.54", "53230eb89891d8ebe75c0d29");
+			login.verifyIfLoginFailed("Log in as Tran Trong Tien");
 		}
 	
 	
 		@Test
 		public void testB_HomeSearch() {
-			webDriver.navigate().to("https://www.facebook.com");
-			home.searchText("spbstu");
-			home.verifySearch("Peter the Great St.Petersburg Polytechnic University");
+			home.searchText("facebook");
+			home.verifySearch("FACEBOOK");
 		}
 	
 		@Category(SmokeTests.class)
@@ -76,15 +75,15 @@ public class TestLab2 {
 		@Category(SmokeTests.class)
 		@Test
 		public void testD_Like() {
-			webDriver.navigate().to("https://www.facebook.com/trongtien.tran.18400");
+			webDriver.navigate().to("https://www.facebook.com/tran.trongtien.54");
 			profile.clickLike();
 			profile.verifyLike();
 		}
 		
 		@Test
-		public void testE_BornDay() {
-			webDriver.navigate().to("https://www.facebook.com/trongtien.tran.18400");
-			profile.verifyBornDay("Born on 1 January 1997");
+		public void testE_TestPost() {
+			webDriver.navigate().to("https://www.facebook.com/tran.trongtien.54");
+			profile.verifyTestPost("Test Post");
 		}
 
 	@AfterClass
