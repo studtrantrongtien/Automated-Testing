@@ -9,16 +9,14 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProfilePage extends PageObject{
 	
-	@FindBy(xpath = "//*[@id=\"jumper_852105600_S:_I100048777852751:105536697748925\"]")
+	@FindBy(className = "userContentWrapper")
 	private WebElement parrent;
 	
-	@FindBy(linkText = "Born on 1 January 1997")
-	private WebElement born;
+	private WebElement textPost;
 	
 	@FindBy(linkText = "Like")
 	private WebElement clickLike;
 	
-	@FindBy(xpath="//*[@id=\"u_0_30\"]/div/div[2]/div[1]/div/div[1]/a/span[2]/span/span")
 	private WebElement checkLike;
 
 	public ProfilePage(WebDriver driver) {
@@ -30,14 +28,13 @@ public class ProfilePage extends PageObject{
 	}
 	
 	public void verifyLike() {
-		checkLike = parrent.findElement(By.linkText("Trongtien Tran"));
+		checkLike = parrent.findElement(By.linkText("Tran Trong Tien"));
 		clickLike.click();
-		assertEquals("Trongtien Tran", checkLike.getText());
+		assertEquals("Tran Trong Tien", checkLike.getText());
 	}
 	
-	public void verifyBornDay(String textBorn) {
-		waitForElementToAppear(born);
-		System.out.println(born.getText());
-		assertEquals(textBorn, born.getText());
+	public void verifyTestPost(String text) {
+		textPost = parrent.findElement(By.tagName("p"));
+		assertEquals(text, textPost.getText());
 	}
 }
