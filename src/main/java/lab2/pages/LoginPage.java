@@ -24,7 +24,7 @@ public class LoginPage extends PageObject{
 	@FindBy(xpath= "//*[@id=\"pass\"]")
 	private WebElement pass;
 	
-	@FindBy(xpath="//*[@id=\"navItem_100048777852751\"]/a/div")
+	@FindBy(xpath="//*[@id=\"navItem_100027259290801\"]/a/div")
 	private WebElement username;
 	
 	@FindBy(xpath="//*[@id=\"header_block\"]/span/div/div[1]/div[2]/span")
@@ -50,7 +50,7 @@ public class LoginPage extends PageObject{
 	WaitAction waitAction;
 	
 	public boolean checkLogin() {
-		List<WebElement> test = driver.findElements(By.xpath("//*[@id=\\\"navItem_100048777852751\\\"]/a/div"));
+		List<WebElement> test = driver.findElements(By.xpath("//*[@id=\\\"navItem_100027259290801\\\"]/a/div"));
 		if(test.size() > 0 ) return true;
 		return false;
 	}
