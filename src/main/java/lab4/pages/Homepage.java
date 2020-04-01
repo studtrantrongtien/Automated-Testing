@@ -19,7 +19,7 @@ public class Homepage extends PageObject{
 	}
 	
 	public void searchText(String text) {
-		waitForElementToAppear(searchBar);
+		searchBar.click();
 		searchBar.sendKeys(text);
 		searchBar.submit();
 	}

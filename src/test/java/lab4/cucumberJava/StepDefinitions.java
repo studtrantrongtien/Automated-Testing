@@ -72,7 +72,6 @@ public class StepDefinitions {
 	
 	@Then("Check title home page")
 	public void Check_title_home_page(){
-		//assertEquals("Facebook", webDriver.getTitle());
 		assertEquals(true,webDriver.getTitle().contains("Facebook"));
 	}
 
